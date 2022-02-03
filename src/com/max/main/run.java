@@ -15,6 +15,7 @@ public class run {
         // new Baek_14681().method1();
         // new Baek_14681().method2();
         // new Baek_2739().method1();
-        new Baek_10950().method1();
+        // new Baek_10950().method1();
+        new Baek_10950().method2();
     }
 }
