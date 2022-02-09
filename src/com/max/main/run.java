@@ -1,6 +1,6 @@
 package com.max.main;
 
-import com.max.practice.Baek_1546;
+import com.max.practice.Baek_4344;
 
 import java.io.IOException;
 
@@ -27,6 +27,9 @@ public class run {
         // new Baek_2562().method1();
         // new Baek_3052().method1();
         // new Baek_3052().method2();
-        new Baek_1546().method1();
+        // new Baek_1546().method1();
+        // new Baek_8958().method1();
+        // new Baek_8958().method2();
+        new Baek_4344().method1();
     }
 }
