@@ -3,9 +3,10 @@ package com.max.practice;
 import java.util.Scanner;
 
 public class Baek_1316 {
-    public void method1(){
-        Scanner sc = new Scanner(System.in);
 
+    static Scanner sc = new Scanner(System.in);
+
+    public void method1(){
        /* int num = sc.nextInt();
         String[] str = new String[num];
         int cnt = 0;
@@ -71,5 +72,28 @@ public class Baek_1316 {
         System.out.println(cnt);
         // ref : https://cocoon1787.tistory.com/613
         // ref : https://bamboo-programmer.tistory.com/6
+    }
+
+    public static boolean check(){
+        boolean[] check = new boolean[26];
+        String str = sc.next();
+        int prev = 0;
+
+        for(int i = 0; i < str.length(); i++){
+            int now = str.charAt(i); // i 번쨰 문자 저장 (현재 문자)
+
+            if(prev != now){ // 앞선 문자와 i 번째 문자가 같지 않다면?
+                if(check[now - 'a'] == false){ // 해당 문자가 처음 나오는 경우 (false 인 경우)
+                    check[now - 'a'] = true;   // true 로 바꿔준다
+                    prev = now;                // 다음 턴을 위해 prev 도 바꿔준다
+                } else {                       // 해당 문자가 이미 나온 적이 있는 경우 (그룹단어가 아니게 됨)
+                    return false;              // 함수 종료
+                }
+            } else {                           // 앞선 문자와 i 번째 문자가 같다면? (연속된 문자)
+                continue;                      // else 문은 없어도 됨
+            }
+        }
+        return true;
+        // ref : https://st-lab.tistory.com/69
     }
 }
