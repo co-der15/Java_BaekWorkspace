@@ -1,9 +1,8 @@
 package com.max.main;
 
-import java.io.IOException;
-import java.util.Scanner;
+import com.max.practice.Baek_11720;
 
-import static com.max.practice.Baek_1316.check;
+import java.io.IOException;
 
 public class run {
     public static void main(String[] args) throws IOException {
@@ -34,6 +33,8 @@ public class run {
         // new Baek_4344().method1();
         // new Baek_11654().method1();
         // new Baek_11720().method1();
+        //new Baek_11720().method2();
+         new Baek_11720().method3();
         // new Baek_10809().method1();
         // new Baek_2675().method1();
         // new Baek_2675().method2();
@@ -48,9 +49,8 @@ public class run {
         // new Baek_5622().method2();
         // new Baek_2941().method1();
         // new Baek_1316().method1();
-
         //------------------------------------------------------
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         int cnt = 0;
         int num = sc.nextInt();
 
@@ -59,6 +59,6 @@ public class run {
                 cnt++;
             }
         }
-        System.out.println(cnt);
+        System.out.println(cnt); */
     }
 }
