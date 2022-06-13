@@ -11,10 +11,10 @@ public class Baek_1110 {
         int temp = num;
 
         while(true){
-            temp = (((num / 10) + (num % 10) % 10) + (num % 10) * 10);
+            num = ((num % 10) * 10) + (((num / 10) + (num % 10)) % 10);
             cnt++;
 
-            if(num == temp){
+            if(temp == num ){
                 break;
             }
         }
