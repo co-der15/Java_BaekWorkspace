@@ -3,8 +3,9 @@ package com.max.practice;
 import java.util.Scanner;
 
 public class Baek_4344 {
+    Scanner sc = new Scanner(System.in);
+
     public void method1(){
-        Scanner sc = new Scanner(System.in);
 
         int[] arr;
         int tCase = sc.nextInt(); //test cass value
@@ -31,5 +32,22 @@ public class Baek_4344 {
             System.out.printf("%.3f%%\n",(cnt/student)*100);
         }
         sc.close();
+    }
+
+    public void method2(){
+
+        int[] score;
+        int Tcase = sc.nextInt();
+
+        for(int i = 0; i < Tcase; i++){
+            int std = sc.nextInt();
+            score = new int[std];
+
+            double sum = 0;
+
+            for(int j = 0; j < std; j++){
+
+            }
+        }
     }
 }
